@@ -48,54 +48,12 @@
    0 <= val <= 100
  */
 
+using System.Collections;
+using RemoveElement;
+
 Console.WriteLine("Remove Elements");
 
-Test.Test1();
-Test.Test2();
+TestSolution.DoTest(  [ 0, 1, 2, 2, 3, 0, 4, 2 ], 2);
 
 
-public static class Solution
-{
-    
-    public static int RemoveElement(int[] nums, int val)
-    {
-        int result = 0;
-        
-        bool IsVal(int element)
-        {
-            return element != val;
-        }
-        
-        var expected = Array.FindAll(nums, IsVal).ToArray();
-        result = expected.Length;
-        
-        return result;
-
-    } 
-}
-
-
-public static class Test
-{
-    
-    public static void Test1() {
-        int[] nums =  [0,1,2,2,3,0,4,2];
-        int val = 2;
-        
-        var k = Solution.RemoveElement(nums, val);
-        
-        Console.WriteLine($"The value for k is {k}");
-        Console.ReadLine();
-    } 
-    
-    public static void Test2() { 
-        int[] nums =  [3,2,2,3];
-        int val = 3;
-        
-        var k = Solution.RemoveElement(nums, val);
-        
-        Console.WriteLine($"The value for k is {k}");
-        Console.ReadLine();
-    } 
-}
 
