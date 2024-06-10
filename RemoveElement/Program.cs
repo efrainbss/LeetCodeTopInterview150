@@ -52,7 +52,8 @@ using System.Collections;
 using RemoveElement;
 
 Console.WriteLine("Remove Elements");
-
+TestSolution.DoTest( [2,3,3], 2);
+TestSolution.DoTest( [3,2,2,3], 3);
 TestSolution.DoTest(  [ 0, 1, 2, 2, 3, 0, 4, 2 ], 2);
 
 

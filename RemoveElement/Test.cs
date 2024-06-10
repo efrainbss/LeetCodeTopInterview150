@@ -40,7 +40,7 @@ public static class TestSolution
         Console.WriteLine($"Result array shorted to k: {ArrayToPrint(nums, k)}");
     }
     
-    static string ArrayToPrint(int[] arr, int limit = 0)
+    public static string ArrayToPrint(int[] arr, int limit = 0)
     {
         string strToPrint = "[";
         
